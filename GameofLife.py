@@ -35,8 +35,6 @@ def display_grid(screen, WIDTH, HEIGHT, Grid):
                 b = random.randint(25,255)
                 pygame.draw.rect(screen, (r,g,b), pygame.Rect(cell_x, cell_y, cell_width, cell_height))
 
-
-#Head SWE for function find neighbors Joel Mendez
 def find_neighbors(row, column, Grid):
     neighbors = 0
     if (row+1) < len(Grid) and Grid[row+1][column] == 1:
